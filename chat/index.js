@@ -71,8 +71,7 @@ chatMessage.textContent = fieldForMessage.value.trim();
 fieldForMessage.value = "";
 
 const checkSpam = (str) => {
-  const strMod = str.replace(/viagra/ig, `***`);
-  return strMod.replace(/xxx/ig, `***`);
+  return str.replace(/viagra/ig, `***`).replace(/xxx/ig, `***`);
 }
 
 chatMessage.textContent = checkSpam(chatMessage.textContent);
